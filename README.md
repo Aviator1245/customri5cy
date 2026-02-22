@@ -26,17 +26,6 @@ It is written using LaTeX and can be generated as follows
 
     make all
 
-## Verilator model
-
-The Verilator model can be built at the top level using
-
-    make all
-
-The RI5CY code uses some quite advanced System Verilog, so you will need a
-very up to date Verilator. We succeeded with development version 3.905, but
-found version 3.900 crashed.
-
-
 # customri5cy
 
 ### Prerequisites
@@ -62,3 +51,7 @@ make clean && make
 The headers for source files should indicate which license applies. If no
 license is specified, then the solderPad license should be assumed.
 # customri5cy
+
+# customri5cy
+
+
