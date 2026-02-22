@@ -36,14 +36,28 @@ The RI5CY code uses some quite advanced System Verilog, so you will need a
 very up to date Verilator. We succeeded with development version 3.905, but
 found version 3.900 crashed.
 
-## Licensing
 
-The upstream design is all licensed under the SolderPad License v 0.51, see
-the file LICENSE.solderpad.
+# customri5cy
 
-The modifications by Embecosm to support Verilator modeling and implement a
-GDB server are licensed under the GNU General Public License 3.0, see the file
-LICENSE.GPL3.
+### Prerequisites
+* **Verilator**
+* **RISC-V Toolchain** (`riscv32-unknown-elf-gcc`)
+
+### Quickstart
+
+```bash
+# Clone
+git clone [https://github.com/Aviator1245/customri5cy.git](https://github.com/Aviator1245/customri5cy.git)
+cd customri5cy
+
+# Build Firmware
+cd sw
+make clean && make
+
+# Build & Run Simulation
+cd ../verilator-model
+make clean && make
+./obj_dir/Vtop
 
 The headers for source files should indicate which license applies. If no
 license is specified, then the solderPad license should be assumed.
